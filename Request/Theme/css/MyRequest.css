@@ -1,0 +1,56 @@
+﻿/* Custom scrollbar styling */
+.table-responsive {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #F3F3F4;
+}
+
+    .table-responsive::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .table-responsive::-webkit-scrollbar-track {
+        background: #F3F3F4;
+    }
+
+    .table-responsive::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        border: 3px solid #F3F3F4;
+    }
+
+/* Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Larger, more friendly checkbox */
+.row-check {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+/* Highlight row when checked */
+.highlight {
+    background-color: #d1ecf1 !important;
+}
+
+/* Responsive font size for table text */
+.table th, .table td {
+    font-size: 15.5px; /* Default size */
+
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 1500px) {
+    .table th, .table td {
+        font-size: 14px; /* Smaller size for smaller screens */
+    }
+}
+
+@media (max-width: 1200px) {
+    .table th, .table td {
+        font-size: 11px; /* Even smaller size for very small screens */
+    }
+}
